@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t sani/incheon .
+        run: docker build -t silversani/incheon .
 
       - name: Push docker image
-        run: docker push sani/incheon:latest
+        run: docker push silversani/incheon:latest
