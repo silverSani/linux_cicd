@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", (res, req) =>{
-    res.send("<h1> Incheon National University Linux CI_CD! </h1>");
+    res.send("<h1> Incheon National University Linux Learning about CI_CD! </h1>");
 });
 
 app.listen(port, ()=>{
