@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Delete Docker Image and Containers
-        run: sudo docker rm -f silversani
+        run: docker rm -f silversani
       - name: Delete Docker Image and Containers
         run: Pull Docker Image from Docker hub
       - name: Execute Docker Container
