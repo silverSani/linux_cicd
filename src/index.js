@@ -3,8 +3,8 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-app.get("/", (res, req) =>{
-    res.send("<h1> Incheon National University Linux Learning CI_CD! </h1>");
+app.get("/", (req, res) =>{
+    res.send("<h1> Incheon National University Linux CI_CD! </h1>");
 });
 
 app.listen(port, ()=>{
