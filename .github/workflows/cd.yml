@@ -12,8 +12,8 @@ jobs:
 
     steps:
       - name: Delete Docker Image and Containers
-        run: docker rm -f silversani
-      - name: Delete Docker Image and Containers
-        run: Pull Docker Image from Docker hub
+        run: sudo docker rm -f silversani
+      - name: Pull Docker Image from Docker hub
+        run: sudo docker pull silversani/incheon:latest
       - name: Execute Docker Container
-        run: sudo docker run -d -p 80:3000 -- name silversani silversani/incheon:latest
+        run: docker run -d -p 80:3000 -- name silversani silversani/incheon:latest
