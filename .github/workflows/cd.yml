@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Delete Docker Image and Containers
+      - name: Delete Docker Image and Container
         run: sudo docker rm -f silversani
       - name: Pull Docker Image from Docker hub
         run: sudo docker pull silversani/incheon:latest
